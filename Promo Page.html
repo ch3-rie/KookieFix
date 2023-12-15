@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Christmas Kookie Pouches and Boxes</title>
+
+
+  
+  <style>
+    
+    h3 {color: #CC231E;}
+
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+ 
+.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #B8D8BE;
+    }
+
+    header {
+        background-image: url("header.jpg");
+        background-size: cover;
+        background-position: center; 
+        display: flex;
+        height: 200px; 
+        padding: 20px;
+    }
+
+    .container {
+      max-width: 1450px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start; /* Align items to the top */
+    }
+
+    .frame {
+      width: 400px; /* Adjusted width to 350px */
+      height: 1550px; /* Adjusted height to auto */
+      border: 2px solid #C70039;
+      border-radius: 5px;
+      text-align: center;
+      padding: 20px;
+      font-family: cursive;
+      margin-bottom: 10px; /* Added margin at the bottom for spacing */
+      margin-left: 20px; /* Added left margin to separate frames */
+      margin-right: 20px;
+    }
+
+    .frame:nth-child(1) {
+      border-color: #CC231E; /* Red color for the first frame */
+      background-color: #B8D8BE;
+      color: #CC231E;
+    }
+
+    .frame:nth-child(2) {
+      border-color: #CC231E; /* Green color for the second frame */
+      background-color: #B8D8BE;
+      color: black;
+    }
+
+    .frame:nth-child(3) {
+      border-color: #CC231E; /* Green color for the second frame */
+      background-color: #B8D8BE;
+      color: #000;
+      height: 500px;
+    }
+
+    .frame h2 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #C70039;
+    }
+
+    .cookie {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; /* Added margin at the bottom for spacing */
+    }
+
+    .cookie img {
+      width: 80px; /* Adjusted the image size */
+      height: 80px; /* Adjusted the image size */
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin-right: 10px; /* Added margin between image and text */
+    }
+
+    .cookie p {
+      font-size: 14px;
+      margin: 5px 0; /* Adjusted margin */
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header></header>
+
+  
+
+  <div class="container">
+    <div class="frame">
+      <h2>KOOKIE SELECTION</h2>
+      <div class="cookies">
+
+        <div class="cookie">
+          <img src="chunk.png" alt="Cookie 1">
+          <div>
+            <h3>CHOCO CHUNK</h3>
+            <p>Chewy kookie base + dark chocolate chunks</p>
+          </div>
+        </div>
+
+        <!-- Add similar structure for other cookies -->
+        <div class="cookie">
+          <img src="nuts.png" alt="Cookie 2">
+          <div>
+            <h3>FRUITS & NUTS</h3>
+            <p>Chewy kookie base + dried cranberries, banana chips, cashew nuts</p>
+          </div>
+        </div>
+
+        <div class="cookie">
+            <img src="treat.png" alt="Cookie 2">
+            <div>
+              <h3>TRIPLE TREAT</h3>
+              <p>Chewy kookie base + dark chocolate chunks,  white chocolate
+                chunks, roasted walnuts
+              </p>
+            </div>
+          </div>
+
+          <div class="cookie">
+            <img src="oats.png" alt="Cookie 2">
+            <div>
+              <h3>OH, HOLY OATS!</h3>
+              <p>Chewy kookie base + semisweet chocolate chips, rolled oats,
+                chia seeds, roasted walnuts, almond slices
+              </p>
+            </div>
+          </div>
+
+
+          <div class="cookie">
+            <img src="smore.png" alt="Cookie 2">
+            <div>
+              <h3>S'MOREGASBORD</h3>
+              <p>Chewy graham kookie base + semisweet chocolate chips,
+                toasted marshmallows, milk chocolate chunk, graham cracker
+              </p>
+            </div>
+          </div>
+
+
+
+          <div class="cookie">
+            <img src="dark.png" alt="Cookie 2">
+            <div>
+              <h3>DARK VADER</h3>
+              <p>Chewy black choco kookie base + dark chocolate
+                chunks & shavings, milk chocolate glaze, fineley chopped walnuts
+              </p>
+            </div>
+          </div>
+
+
+
+          <div class="cookie">
+            <img src="velvet.png" alt="Cookie 2">
+            <div>
+              <h3>RED VELVET</h3>
+              <p>Chewy red velvet kookie base + white chocolate chunks,
+                tangy cream cheese filling
+              </p>
+            </div>
+          </div>
+
+
+          <div class="cookie">
+            <img src="nutella.png" alt="Cookie 2">
+            <div>
+              <h3>NUTTY M&M</h3>
+              <p>Chewy kookie base + semisweet chocolate chips,
+                M&Ms, crunchy peanut butter filling
+              </p>
+            </div>
+          </div>
+
+
+          <div class="cookie">
+            <img src="krinkle.png" alt="Cookie 2">
+            <div>
+              <h3>NUTELLA KRINKLE</h3>
+              <p>Fudgy chocolate crinkle kookie base+
+                semisweet chocolate chips, luscious Nutella 
+                filling
+              </p>
+            </div>
+          </div>
+
+
+          <div class="cookie">
+            <img src="koko.png" alt="Cookie 2">
+            <div>
+              <h3>KOKO MONSTER</h3>
+              <p>Signature blue velvet kookie base +
+                Oreos, Koko Crunch, white chocolate chunks
+              </p>
+            </div>
+          </div>
+
+          <div class="cookie">
+            <div>
+              
+              <h3>Kookie sizes:
+                 Regular: 45-55g | Grande: 90-110g
+              </h3>
+            </div>
+          </div>
+
+
+
+
+
+       
+        
+      </div>
+    </div>
+    <div class="frame">
+        <h2>KOOKIE POUCHES & BOXES</h2>
+        <div>
+            <h3>SOLO POUCH - GRANDE</h3>
+            <p>Minimum 10 pouches: Starts at P55/pouch</p>
+            <p>Minimum 20 pouches: Starts at P50/pouch</p>   
+          </div>
+
+          <br> 
+
+          <div>
+            <h3>POUCH OF 4 - REGULAR</h3>
+            <p>Minimum 10 pouches: Starts at P105/pouch</p>
+            <p>Minimum 20 pouches: Starts at P100/pouch</p>   
+          </div>
+
+          <br> 
+
+
+          <div>
+            <h3>ACETATE BOX OF 4 - REGULAR</h3>
+            <p>Minimum 10 boxes: Starts at P115/box</p>
+            <p>Minimum 20 boxes: Starts at P110/box</p>   
+          </div>
+
+          <br> 
+
+
+          <div>
+            <h3>ACETATE BOX OF 6 - REGULAR</h3>
+            <h3>WHITE BOX OF 6 - REGULAR</h3>
+            <h3>WHITE BOX OF 3 - GRANDE</h3>
+            <p>Minimum 10 boxes: Starts at P150/box</p>
+            <p>Minimum 20 boxes: Starts at P145/box</p>   
+          </div>
+
+          <br> 
+
+          <div>
+            <h3>WHITE BOX OF 12 - REGULAR</h3>
+            <h3>WHITE BOX OF 6 - GRANDE</h3>
+            <p>Minimum 10 boxes: Starts at P275/box</p>
+            <p>Minimum 20 boxes: Starts at P270/box</p>   
+          </div>
+          <br> 
+
+          <div>
+            <h3>Kookie sizes: Regular: 45-55g|Grande: 90-110g</h3>
+          </div>
+
+          <br> 
+
+          <div>
+            <h3>*All are packed in our festive Christmas packaging.*</h3>
+          </div>
+
+
+
+
+
+
+          
+          
+    </div>
+    <div class="frame">
+        <h2>MONTH OF DECEMBER CALENDAR!</h2>
+      <img src="calendar.jpg" alt="Calendar Image" style="width: 400px; height: 400px;">
+      
+    </div>
+  </div>
+
+
+
+
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+
+</html>

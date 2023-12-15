@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Connect With Us </title>
+  <style>
+
+   @font-face {
+      font-family: 'Motley-Forces';
+      src: url('motley-forces-font.woff');
+    }
+    
+    @font-face {
+      font-family: 'Yeasty-Flavors';
+      src: url('yeasty-flavors.woff');
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5; 
+    }
+
+    @font-face {
+  font-family: 'Sunny-Spells';
+  src: url('sunny-spells-font.woff');
+}
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #FFFDD0; 
+      padding: 70px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between; 
+      align-items: flex-start; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: calc(50% - 10px);
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      display: inline-block;
+    }
+
+    input[type="email"] {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+    }
+
+    .name-inputs {
+      display: flex;
+    }
+
+    .name-inputs input {
+      margin-right: 10px;
+    }
+
+    .actions {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .actions button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px; 
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 16px;
+      outline: none; 
+    }
+
+    .send-btn {
+      background-color: #C70039; 
+      color: #fff;
+      font-family: 'Yeasty-Flavors', sans-serif;
+    }
+
+    .clear-btn {
+      border-color:  #850429; 
+      color: #000000;
+      border: 2px solid #e2dedf;
+      font-family: 'Yeasty-Flavors', sans-serif;
+    }
+
+    .outside-header {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Motley-Forces', sans-serif;
+      
+    }
+
+    .logo-img {
+      height: 95px;
+      width: 350px;
+      text-align: center; 
+    }
+
+    .social-media-icons {
+      text-align: center; 
+      margin-top: 1px; 
+    }
+
+    .social-media-icons img {
+      width: 55px;
+      margin: 0 10px; 
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="outside-header">
+    <h1 style="font-size: 55px;"> Connect With Us! </h1>
+  </div>
+
+  <div class="container">
+    <div class="contact-details">
+      <form id="contactForm">
+        <div class="name-inputs">
+          <input type="text" id="firstName" placeholder="FIRST NAME">
+          <input type="text" id="lastName" placeholder="LAST NAME">
+        </div>
+
+        <br>
+
+        <input type="email" id="email" placeholder="EMAIL">
+        
+        <br>
+
+        <textarea id="message" placeholder="MESSAGE"></textarea>
+        <div class="actions">
+          <button class="send-btn" type="submit" onclick="send(event)"> Send </button>
+          <button class="clear-btn" type="button" onclick="clear()"> Clear </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="logo">
+      <a href="index.html"><img class="logo-img" src="KookieFix_Logo.png" alt="KookieFix"></a>
+      <div class="social-media-icons">
+        <a href="https://www.facebook.com/kookiefix"><img src="fb2.png" alt="Social Media Icon 3"></a>
+        <a href="https://www.instagram.com/kookiefix?igshid=OGQ5ZDc2ODk2ZA=="><img src="intsa2.png" alt="Social Media Icon 1"></a>
+        <a href="mailto:kookiefix.pamp@gmail.com"><img src="gmail-logo.png" alt="Social Media Icon 2"></a>
+      </div>
+      </div>
+    </div>
+
+  <script>
+    function clear() {
+      document.getElementById("contactForm").reset();
+    }
+
+    function send(event) {
+      event.preventDefault(); 
+
+      
+      
+      alert('Form submitted!');
+
+      clear(); 
+    }
+  </script>
+
+</body>
+
+</html>

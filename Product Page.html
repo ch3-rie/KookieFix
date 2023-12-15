@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body, h1, h2, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Sunny-Spells';
+  src: url('sunny-spells-font.woff');
+}
+
+header {
+  background-color: #fcd2dd;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  margin-right: 20px;
+  height: 65px;
+  width: 270px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+    font-family: 'Sunny-Spells', sans-serif;
+  font-size: 40px;
+}
+
+nav {
+  background-color: #fcd2dd;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.2s ease;
+}
+
+nav a:hover {
+  border-bottom: 4px solid #F33A6A;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  position: relative;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9e2d7;
+        }
+
+        @font-face {
+  font-family: 'Sunny-Spells';
+  src: url('sunny-spells-font.woff');
+}
+h1{
+    font-family: 'Sunny-Spells';
+    text-align: center;
+    font-size: 170px;
+    color: #3d1d03;
+}
+
+        #product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #777;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #e44d26;
+        }
+    </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><a href="index.html"><img src="KookieFix_Logo.png" alt="KookieFix Logo"></a></div>
+    <nav>
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="Product Page.html"> Pastries </a></li>
+          <li><a href="#"> Order </a></li>
+          <li><a href="Contact Page.html"> Contacts </a></li>
+          <li><a href="About Page.html"> About </a></li>
+        </ul>
+      </nav>
+</header>
+
+    <h1> Say it with kookies! </h1>
+
+    <div id="product-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img class="product-image" src="kookie-1.png" alt="Product 1">
+            <div class="product-details">
+                <h3> CHOCO CHUNK </h3>
+                <p>REG</p>
+                <p class="price">4P: ₱90  |  6P: ₱130  |  12P: ₱240 </p>
+                <p>GRANDE</p>
+                <p class="price">Solo: ₱45  |  3P: ₱130  |  6P: ₱240 </p>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img class="product-image" src="kookie-2.png" alt="Product 2">
+            <div class="product-details">
+                <h3> DARK VADER </h3>
+                <p> REG </p>
+                <p class="price">4P: ₱120  |  6P: ₱170  |  12P: ₱320 </p>
+                <p>GRANDE</p>
+                <p class="price">Solo: ₱60  |  3P: ₱170  |  6P: ₱320 </p>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img class="product-image" src="kookie-4.png" alt="Product 3">
+            <div class="product-details">
+                <h3> TRIPLE TREAT </h3>
+                <p> REG </p>
+                <p class="price">4P: ₱120  |  6P: ₱170  |  12P: ₱320 </p>
+                <p>GRANDE</p>
+                <p class="price">Solo: ₱60  |  3P: ₱170  |  6P: ₱320 </p>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img class="product-image" src="kookie-5.png" alt="Product 4">
+            <div class="product-details">
+                <h3> OH, HOLY OATS </h3>
+                <p> REG </p>
+                <p class="price">4P: ₱120  |  6P: ₱170  |  12P: ₱320 </p>
+                <p>GRANDE</p>
+                <p class="price">Solo: ₱60  |  3P: ₱170  |  6P: ₱320 </p>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img class="product-image" src="kookie-3.png" alt="Product 5">
+            <div class="product-details">
+                <h3> S'MOREGASBORD </h3>
+                <p> REG </p>
+                <p class="price">4P: ₱120  |  6P: ₱170  |  12P: ₱320 </p>
+                <p>GRANDE</p>
+                <p class="price">Solo: ₱60  |  3P: ₱170  |  6P: ₱320 </p>
+            </div>
+        </div>
+        </div>
+
+
+    <h1> STUFFED KOOKIES </h1>
+
+    <div id="product-container">
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img class="product-image" src="kookie-6.png" alt="Product 6">
+            <div class="product-details">
+                <h3> RED VELVET </h3>
+                <p> REG </p>
+                <p class="price">4P: ₱90  |  6P: ₱170  |  12P: ₱320 </p>
+                <p>GRANDE</p>
+                <p class="price">Solo: ₱70  |  3P: ₱170  |  6P: ₱320 </p>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img class="product-image" src="kookie-7.png" alt="Product 7">
+            <div class="product-details">
+                <h3> NUTTY M&M </h3>
+                <p> REG </p>
+                <p class="price">4P: ₱145  |  6P: ₱220  |  12P: ₱420 </p>
+                <p>GRANDE</p>
+                <p class="price">Solo: ₱70  |  3P: ₱220  |  6P: ₱420 </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

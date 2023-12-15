@@ -1,0 +1,392 @@
+body, h1, h2, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+@font-face {
+  font-family: 'Sunny-Spells';
+  src: url('sunny-spells-font.woff');
+}
+
+header {
+  background-color: #fcd2dd;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  margin-right: 20px;
+  height: 65px;
+  width: 270px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+    font-family: 'Sunny-Spells', sans-serif;
+  font-size: 40px;
+}
+
+nav {
+  background-color: #fcd2dd;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.2s ease;
+}
+
+nav a:hover {
+  border-bottom: 4px solid #F33A6A;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  position: relative;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: auto;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Motley-Forces';
+  src: url('motley-forces-font.woff');
+}
+
+.promo{
+  background: #FF6961;
+  margin: auto;
+  padding: 250px;
+}
+
+.promo a{
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.2s ease;
+}
+
+.promo h1 {
+  color: #F7CAC9; /* Christmas red color */
+  font-family: 'Motley-Forces', sans-serif;
+  font-size: 100px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Summary-Notes';
+  src: url('summary-notes-font.woff');
+}
+
+.promo-details{
+  color: #ffff;
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: 'Summary-Notes', sans-serif;
+  text-align: center;
+}
+
+.pill{
+  font-size: 30px;
+  font-family: 'Summary-Notes', sans-serif;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background: #dddddd;
+  cursor: pointer;
+}
+
+.pill:hover{
+  background: #cccccc;
+}
+
+.pill a{
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.2s ease;
+}
+
+@font-face {
+  font-family: 'Motley-Forces';
+  src: url('motley-forces-font.woff');
+}
+
+.about{
+  background: #dfbac9;
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.about h1 {
+  color: #ffff;
+  font-family: 'Motley-Forces', sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Summary-Notes';
+  src: url('summary-notes-font.woff');
+}
+
+.about-details{
+  color: #ffff;
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: 'Summary-Notes', sans-serif;
+  text-align: center;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cotainer img:hover .overlay-text {
+  opacity: 1;
+}
+
+.container {
+  background-color:#ffe9f0;
+  display: grid;
+  padding: 60px;
+  size: 100%;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 20px 20px; 
+  grid-template-areas: 
+    "Event-1 Event-4 Event-4"
+    "Event-2 Event-3 Event-6"
+    "Event-5 Event-5 Event-7"; 
+}
+.Event-1 { grid-area: Event-1; }
+.Event-2 { grid-area: Event-2; }
+.Event-3 { grid-area: Event-3; }
+.Event-4 { grid-area: Event-4; }
+.Event-5 { grid-area: Event-5; }
+.Event-6 { grid-area: Event-6; }
+.Event-7 { grid-area: Event-7; }
+
+.events{
+  background-color:#ffe9f0;
+  font-family: 'Motley-Forces', sans-serif;
+  color: #000;
+  font-size: 100px;
+  margin-bottom: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.container img:hover {
+  transform: scale(0.9);
+}
+
+
+.customers{
+  height: 100%;
+  width: 100%;
+  margin: 16px;
+  font-family: 'Summary-Notes', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.customers h1{
+  font-family: 'Motley-Forces', sans-serif;
+  color: #000;
+  font-size: 100px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.customers p{
+  padding: 5px;
+}
+
+.customers ul li{
+  margin: 16px;
+  float: left;
+}
+
+.customers h2 p{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.customers ul li{
+  list-style: none;
+}
+
+.customers ul{
+  overflow: hidden;
+  padding: 48px;
+}
+
+.customers ul li a{
+  background: #ffc;
+  display: block;
+  height: 160px;
+  width: 160px;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding: 16px;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+  transition: transform.15s linear;
+}
+
+.customers ul li p{
+  font-size: 100%;
+}
+
+.customers ul li a{
+  transform: rotate(-6deg);
+}
+
+.customers ul li:nth-child(1)
+a {
+  position: relative;
+  top: 5px;
+  background: #cfc;
+  transform: rotate(6deg);
+}
+
+.customers ul li:nth-child(2)
+a {
+  position: relative;
+  top: 5px;
+  background: #ffbdbd;
+  transform: rotate(-3deg);
+}
+
+.customers ul li:nth-child(3)
+a {
+  position: relative;
+  top: 10px;
+  background: #ccf;
+  transform: rotate(5deg);
+}
+
+.customers ul li:nth-child(4)
+a {
+  position: relative;
+  top: -5px;
+  transform: rotate(6deg);
+}
+
+.customers ul li:nth-child(5)
+a {
+  position: relative;
+  top: 5px;
+  background: #ffbdbd;
+  transform: rotate(-3deg);
+}
+
+.customers ul li:nth-child(6)
+a {
+  position: relative;
+  top: -5px;
+  background: #ccf;
+  transform: rotate(6deg);
+}
+
+.customers ul li a:hover, ul li a:focus{
+  position: relative;
+  box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+}
+
+footer{
+  text-align: center;
+  font-family: 'Summary-Notes', sans-serif;
+  font-size: 30px;
+}
+
+footer p{
+  margin: 20px;
+}
+
+footer a img {
+  width: 80px;
+  height: auto;
+  margin-top: 50px;
+  padding: 8px;
+}
+
+footer a {
+  display: inline-block;
+  margin-right: 10px;
+}
